@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message = $_POST["message"];
 
     if (empty(trim($name)) || empty(trim($companyName)) || empty(trim($age)) || empty(trim($email)) || empty(trim($message))) {
-        echo "<script>alert('未入力の項目があります。');</script>";
+        echo "<script>alert('必須項目が未入力です。入力内容をご確認ください。');</script>";
         exit;
     }
 }
@@ -39,23 +39,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <table>
                         <tr>
                             <th><label for="name">お名前</label></th>
-                            <td><input type="text" id="name" name="name"></td>
+                            <td><input type="text" id="name" name="name" size="40"></td>
                         </tr>
                         <tr>
                             <th><label for="companyName">会社名</label></th>
-                            <td><input type="text" id="companyName" name="companyName"></td>
+                            <td><input type="text" id="companyName" name="companyName" size="40"></td>
                         </tr>
                         <tr>
                             <th><label for="age">年齢</label></th>
-                            <td><input type="number" id="age" name="age"></td>
+                            <td><input type="number" id="age" name="age" size="40"></td>
                         </tr>
                         <tr>
                             <th><label for="email">メールアドレス</label></th>
-                            <td><input type="email" id="email" name="email"></td>
+                            <td><input type="email" id="email" name="email" size="40"></td>
                         </tr>
                         <tr>
                             <th><label for="message">お問い合わせ内容</label></th>
-                            <td><textarea id="message" name="message" placeholder="お問い合わせ内容"></textarea></td>
+                            <td><textarea id="message" name="message" size="40" placeholder="お問い合わせ内容"></textarea></td>
                         </tr>
                     </table>
                     <div class="btn-css">

@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location:content.php");
+    header("Location: contact.php");
     exit;
 }
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     }
                     ?>
                     <br>
-                    <p><a href="content.php" style="color: black;">お問い合わせフォームに戻る</a></p>
+                    <p><a href="contact.php" style="color: black;">お問い合わせフォームに戻る</a></p>
                 </div>
             </section>
         </main>

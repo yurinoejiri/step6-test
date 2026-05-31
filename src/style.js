@@ -40,5 +40,5 @@ let index = 0;
 
 document.getElementById("footer-btn").addEventListener("click", () => {
     index = (index + 1) % colors.length;
-    document.getElementById("footer-colors").style.backgroundColor = colors[index];
+    document.querySelector("#footer-colors").style.backgroundColor = colors[index];
 });

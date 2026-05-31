@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*------------- 全体 --------------*/
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0 auto;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/*------------- ヘッダー --------------*/
+header {
+    text-align: center;
+    background-color: #76b382;
+    padding: 10px 20px;
+}
+h1,
+h2 {
+    color: white;
+}
+
+
+/*-------------- メイン ----------------*/
+.flex {
+    display: flex;
+    align-items: center;
+    background-color: #5992ab;
+    
+}
+aside {
+    line-height: 40px;  
+    flex: 1;
+    padding-left: 40px;
+}
+li {
+    list-style: none;
+}
+td {
+    padding: 4px;
+}
+
+/* comfirm */
+.button-content {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* send */
+.send-content {
+    padding: 50px 0;
+    gap: 40px;
+}
+
+/* フォーム　　*/
+form,
+.content,
+.send-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(158, 178, 209);
+    align-items: center;
+}
+table {
+    background-color: #eaeaea;
+    margin: 20px;
+}
+.error-text {
+    font-size: 12px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width: 40ch;
+}
+
+textarea {
+    resize: none;
+    width: 40ch;
+    height: 18ch;
+}
+.button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*-------------　フッター　--------------*/
+footer {
+    background-color: blue;
+    color: white;
+    padding: 15px 40px;
+
+}

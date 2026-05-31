@@ -1,12 +1,35 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    header("Location: contact.php");
+    exit;
+}
     $name = $_POST["name"];
     $companyName = $_POST["companyName"];
     $email = $_POST["email"];
     $age = $_POST["age"];
     $message = $_POST["message"];
+
+if (empty(trim($name)) || empty(trim($companyName)) || empty(trim($email)) || empty(trim($age)) || empty(trim($message))) {
+    echo "<script>alert('未入力の項目があります。'); location.href='contact.php';</script>";
+    exit;
 }
 ?>
+<!-- if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    header("Location: contact.php");
+    exit;
+}
+
+$name        = $_POST["name"];
+$companyName = $_POST["companyName"];
+$email       = $_POST["email"];
+$age         = $_POST["age"];
+$message     = $_POST["message"];
+
+// ✅ 未入力チェックを追加
+if (empty(trim($name)) || empty(trim($companyName)) || empty(trim($age)) || empty(trim($email)) || empty(trim($message))) {
+    echo "<script>alert('未入力の項目があります。'); location.href='contact.php';</script>";
+    exit;
+} -->
 <!DOCTYPE html>
 <html lang="ja">
     <head>
