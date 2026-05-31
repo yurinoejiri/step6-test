@@ -7,7 +7,7 @@ function validate() {
         document.getElementById("email").value.trim() === "" ||
         document.getElementById("message").value.trim() === ""
     ) {
-        alert("未入力の項目があります。");
+        alert("必須項目が未入力です。入力内容をご確認ください。");
         return false;//フォームをキャンセルする
     }
 
